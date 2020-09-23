@@ -1,0 +1,79 @@
+.footer
+  padding: 10px 15px 30px
+  background: $primary-content-color
+  color: #fff
+
+.footer__wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+
+.footer__contacts
+  flex: 1 0 250px
+  padding: 20px 0
+  margin: 0 15px 0 0
+  @media (max-width: $media-sm)
+    text-align: left
+    padding: 0
+
+.footer__contacts:last-child
+  text-align: right
+  @media (max-width: $media-sm)
+    text-align: left
+
+
+.footer__contacts .order
+  cursor: pointer
+  text-decoration: underline
+
+.footer__text
+  -webkit-box-flex: 1
+  -webkit-flex: 1 1 250px
+  -ms-flex: 1 1 250px
+  flex: 1 1 250px
+  padding: 20px 0
+
+.footer__phone
+  font-size: 24px
+  margin: 0 0 15px
+  @media (max-width: $media-sm)
+    font-size: 18px
+
+.footer__phone a
+  text-decoration: none
+  position: relative
+  padding: 0 0 0 27px
+
+  @media (max-width: $media-sm)
+    padding: 0
+
+
+.footer__mail
+  font-size: 17px
+  margin: 0 0 20px
+
+.footer__mail a
+  color: #000
+  text-decoration: none
+  position: relative
+  padding: 0 0 0 27px
+
+
+.footer__social
+  margin: 0 0 15px
+
+.footer__copy
+  font-size: 12px
+
+.social__label
+  font-size: 14px
+  margin: 0
+
+.note__title
+  font-size: 14px
+  text-transform: uppercase
+  margin: 0 0 15px
+  line-height: 22px
+
+.note__text
+  font-size: 12px

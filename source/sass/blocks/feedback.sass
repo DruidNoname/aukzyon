@@ -1,0 +1,45 @@
+.feedback
+  background: $tertiary-content-color
+  color: $secondary-color
+  @media (max-width: $media-sm)
+    display: none
+
+.feedback__title
+  margin-bottom: 20px
+
+.feedback__item
+  padding: 40px 80px 10px
+
+.feedback__block
+  box-shadow: 0 0 5px #ccc
+  padding: 40px 100px
+  @media (max-width: $media-md)
+    padding: 40px 55px
+
+.feedback__text
+  position: relative
+  line-height: 1.5
+
+  &:before,
+  &:after
+    position: absolute
+    content: '"'
+    top: 50%
+    font-size: 300%
+  &:before
+    left: -50px
+    @media (max-width: $media-md)
+      left: -40px
+  &:after
+    right: -50px
+    @media (max-width: $media-md)
+      right: -40px
+
+.feedback__author,
+.feedback__prof
+  text-align: center
+  font-style: italic
+
+.feedback__author
+  font-weight: 700
+

@@ -1,0 +1,39 @@
+#scrollup
+  display: none
+  position: fixed
+  opacity: 0.9
+  right: 5px
+  bottom: 5px
+  cursor: pointer
+  float: right
+  min-height: 35px
+  padding: 14px 1px 12px
+  width: 59px
+  border: 1px solid #f16521
+  border-radius: 3px
+  &:hover
+    opacity: .5
+
+  img
+    display: block
+    margin: 0 auto
+
+  .vverh
+    margin: 8px 0 0
+    color: #f16521
+    font-size: 16px
+    font-weight: 500
+    text-align: center
+    text-transform: uppercase
+
+@media screen and (max-width: 768px)
+  #scrollup:hover
+    opacity: 1
+
+@media screen and (max-width: 600px)
+  #scrollup
+    .vverh
+      .nav-arrow-line
+        top: 1rem
+      .nav-arrow-line-1
+        left: 38%

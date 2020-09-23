@@ -1,0 +1,43 @@
+.sec-banner
+  padding-top: 90px
+  padding-bottom: 70px
+  background-image: linear-gradient(90deg,rgba(255, 255, 255, 0.4) 1%,rgba(255, 255, 255, 0.4) 100%), url('../img/banner-bg-2.jpg')
+  background-size: cover
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media (max-width: $media-md)
+    padding-top: 35px
+    padding-bottom: 55px
+    background-position: center top
+  @media (max-width: $media-sm)
+    flex-direction: column
+
+.sec-banner__title
+  font-size: 36px
+  line-height: 1.5
+  color: #000000
+  margin-bottom: 20px
+
+.sec-banner__subtitle
+  font-size: 20px
+  color: #000000
+
+.sec-banner__form
+  background: $primary-form-bg-color
+  border: $primary-form-border-color
+  border-radius: $primary-form-border-radius
+  margin-left: 0
+
+.sec-banner__form-header
+  padding: 20px 10px
+  text-align: center
+  background: $primary-form-head-gradient
+  border: $primary-form-head-border-color
+  border-radius: $primary-form-border-radius
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+  color: $secondary-color
+
+.sec-banner__form-content
+  padding: 10px 20px

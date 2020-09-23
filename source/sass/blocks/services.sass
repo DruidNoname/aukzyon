@@ -1,0 +1,123 @@
+.services
+  padding: 65px 0
+
+.services__item
+  padding: 75px 0
+  &:nth-child(odd)
+    background: #cfcfcf
+  &:last-child
+    padding-bottom: 0
+
+
+.services__item-wrapper
+  padding: 0 calc(50% - 585px + 170px)
+
+  @media (max-width: $media-xl)
+    padding: 0 60px
+
+  @media (max-width: $media-lg)
+    padding: 0 30px
+
+  @media (max-width: $media-md)
+    padding: 0 25px
+
+  @media (max-width: $media-sm)
+    padding: 0 10px
+
+  @media (max-width: $media-xs)
+    padding: 0 calc(50% - 310/2)
+
+.services__order-info
+  position: relative
+  display: flex
+  justify-content: space-between
+  &:before
+    content: ''
+    position: absolute
+    width: 90px
+    height: 90px
+    top: 0
+    left: -130px
+    background-image: url('../img/features-icon-result.png')
+    background-size: contain
+
+.services__item:nth-of-type(2),
+.services__item:nth-of-type(4),
+.services__item:nth-of-type(5)
+  .services__order-info:before
+    background-image: url('../img/features-icon-new.png')
+  
+.services__order-title
+  font-family: 'Oswald', sans-serif
+  font-size: 22px
+  color: $secondary-content-color
+  font-weight: 500
+  line-height: 1.5em
+  @media (max-width: $media-lg)
+    font-size: 18px
+  .services__commentary
+    @media (max-width: $media-sm)
+      min-width: 180%
+
+
+.services__commentary
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif
+  line-height: 1.2em
+  font-size: 13px
+  font-weight: 100
+  font-style: italic
+  color: rgb(98, 98, 98)
+
+.services__order-group
+  text-align: right
+
+.services__price
+  display: block
+  margin-bottom: 18px
+  font-size: 20px
+  font-weight: 700
+  color: $tertiary-content-color
+
+.services__order-button
+  padding: 5px 12px
+  border-radius: $primary-form-border-radius
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5)
+
+  @media (max-width: $media-sm)
+    padding: 5px 9px
+
+.services__order-button_center
+  margin: 25px auto 5px
+
+.services__details
+  padding: 15px 30px 15px 10px
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1)
+  cursor: pointer
+
+.services__summary
+  font-family: 'Oswald', sans-serif
+  display: block
+  outline-style: none
+  position: relative
+  &:after
+    position: absolute
+    content: ''
+    background: url("../img/arrow-down.svg")
+    background-size: contain
+    width: 12px
+    height: 12px
+    top: calc(50% - 6px)
+    right: -20px
+    transition: transform 0.2s ease-in-out
+
+.services__summary::-webkit-details-marker
+    display: none
+
+.services__details[open]
+  .services__summary
+    padding-bottom: 15px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+    &:after
+      transform: rotate(180deg)
+      top: calc(50% - 13px)
+

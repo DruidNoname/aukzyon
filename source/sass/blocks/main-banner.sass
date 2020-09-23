@@ -1,0 +1,51 @@
+.main-banner
+  padding-top: 80px
+  padding-bottom: 30px
+  background-image: linear-gradient(90deg,rgba(0 ,0 ,0 ,0.6) 1%,rgba(0 ,0 ,0 ,0.6) 100%), url('../img/banner-bg.jpg')
+  background-size: cover
+  @media (max-width: $media-lg)
+    background-position: bottom right
+
+.main-banner__content
+  padding-left: 45%
+  @media (max-width: $media-lg)
+    padding-left: 0
+
+.main-banner__title
+  font-size: 44px
+  font-weight: 500
+  letter-spacing: 0.1em
+  line-height: 1.5
+  color: $secondary-color
+  margin-bottom: 80px
+
+  @media (max-width: $media-lg)
+    text-align: center
+
+  @media (max-width: $media-sm)
+    font-size: 32px
+    margin-bottom: 50px
+
+.main-banner__form
+  background: $primary-form-bg-color
+  border: $primary-form-border-color
+  border-radius: $primary-form-border-radius
+  margin-left: 0
+  @media (max-width: $media-lg)
+    margin-left: auto
+    margin-right: auto
+
+
+.main-banner__form-header
+  padding: 20px 10px
+  text-align: center
+  background: $primary-form-head-gradient
+  border: $primary-form-head-border-color
+  border-radius: $primary-form-border-radius
+  border-bottom-left-radius: 0
+  border-bottom-right-radius: 0
+  color: $secondary-color
+  font-weight: 900
+
+.main-banner__form-content
+  padding: 10px 20px

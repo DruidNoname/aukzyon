@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.ssh
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+build/
+node_modules/
+teksty/
+npm-debug.*
+Thumbs.db
+er.name
+css/

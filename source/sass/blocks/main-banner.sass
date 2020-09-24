@@ -1,39 +1,46 @@
 .main-banner
-  padding-top: 80px
-  padding-bottom: 30px
+  padding-top: 170px
+  padding-bottom: 150px
   background-image: linear-gradient(90deg,rgba(0 ,0 ,0 ,0.6) 1%,rgba(0 ,0 ,0 ,0.6) 100%), url('../img/banner-bg.jpg')
   background-size: cover
   @media (max-width: $media-lg)
     background-position: bottom right
 
 .main-banner__content
-  padding-left: 45%
+  display: flex
+  justify-content: space-between
   @media (max-width: $media-lg)
-    padding-left: 0
+    flex-direction: column
 
 .main-banner__title
-  font-size: 44px
+  width: 45%
+  font-size: 40px
   font-weight: 500
-  letter-spacing: 0.1em
-  line-height: 1.5
+  line-height: 1.2
   color: $secondary-color
-  margin-bottom: 80px
 
   @media (max-width: $media-lg)
+    width: 75%
+    margin: 0 auto
     text-align: center
+    margin-bottom: 30px
 
   @media (max-width: $media-sm)
     font-size: 32px
     margin-bottom: 50px
 
+  span
+    font-size: 0.6em
+    font-weight: 300
+
 .main-banner__form
   background: $primary-form-bg-color
   border: $primary-form-border-color
   border-radius: $primary-form-border-radius
-  margin-left: 0
   @media (max-width: $media-lg)
     margin-left: auto
     margin-right: auto
+    order: 1
 
 
 .main-banner__form-header
@@ -46,6 +53,7 @@
   border-bottom-right-radius: 0
   color: $secondary-color
   font-weight: 900
+  margin: 0
 
 .main-banner__form-content
   padding: 10px 20px

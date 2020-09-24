@@ -1,20 +1,21 @@
 .numbers
-  display: flex
-  flex-wrap: wrap
-  justify-content: space-between
-
+  padding-top: 120px
 .numbers__title
   width: 100%
   margin-bottom: 50px
 
 .numbers__group
   display: flex
-  width: 28.5%
-  padding: 30px 20px
-  border: 2px solid $primary-content-border-color
-  border-radius: $primary-form-border-radius
-  @media (max-width: 1050px)
-    padding: 30px 10px
+  flex-wrap: wrap
+  justify-content: space-between
+
+.numbers__item
+  width: 30%
+  padding: 60px 5px
+  background-color: rgb(255, 255, 255)
+  color: #333
+  border-radius: 3px
+  box-shadow: 0px 6px 16px 6px rgba(0, 0, 0, 0.05)
 
   @media (max-width: $media-md)
     width: 45%
@@ -27,20 +28,34 @@
     padding-left: 20px
 
 .numbers__accent
-  font-size: 32px
+  display: block
+  position: relative
+  text-align: center
+  font-size: 14px
   font-weight: 700
-  color: $secondary-content-color
-  margin-right: 40px
+  margin: 90px auto 40px
+  letter-spacing: 2px
+  &:before
+    content: ''
+    position: absolute
+    width: 80px
+    height: 80px
+    top: -90px
+    left: calc(50% - 40px)
+    background-image: url(../img/elcods-icons.jpg)
+    background-size: 600%
+    background-position: 80% 0%
+    background-repeat: no-repeat
 
-  @media (max-width: 1120px)
-    margin-right: 10px
+.numbers__item:nth-child(2) .numbers__accent:before
+  background-position: 100% 0%
 
-  @media (max-width: $media-md)
-    font-size: 24px
+.numbers__item:nth-child(3) .numbers__accent:before
+  background-position: 40% 40%
 
-  @media (max-width: $media-sm)
-    margin-right: 40px
-
-
-.numbers__accent-word
-  font-size: 0.6em
+.numbers__descriptor
+  display: block
+  max-width: 320px
+  text-align: center
+  line-height: 1.5
+  margin: 0 auto

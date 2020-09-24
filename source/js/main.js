@@ -77,14 +77,14 @@ function paddingHeader() {
     $('.main').css('padding-top',$('.inner_page .header').outerHeight());
 }
 // добавление класса шапки при скролле
-function scrollHeader() {
-    var header = $('.header');
-    if($(window).scrollTop() > 0){
-        header.addClass('header--scroll');
-    } else {
-        header.removeClass('header--scroll');
-    }
-}
+// function scrollHeader() {
+//     var header = $('.header');
+//     if($(window).scrollTop() > 0){
+//         header.addClass('header--scroll');
+//     } else {
+//         header.removeClass('header--scroll');
+//     }
+// }
 
 
 

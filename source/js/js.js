@@ -195,21 +195,39 @@ function ajax61(){
 jQuery.fn.notExists=function(){return $(this).length==0}
 $(document).ready(function(){
     $("#send-61").validation(
-        $("#tel-61").validate({
+        $("#name-61").validate({
             test:"blank",
             invalid:function(){
                 $(".error").remove();
                 if($(this).nextAll(".error").notExists()){
-                    $(this).after('<div class="error">Введите номер телефона</div>');
+                    $(this).after('<div class="error">Введите имя пользователя</div>');
                     $(this).nextAll(".error").delay(1500).fadeOut("slow");
                     setTimeout(function(){
-                        $("#tel-61").next(".error").remove();
+                        $("#name-61").next(".error").remove();
                     },2100);
                 }
-            },valid:function(){$(this).nextAll(".error").remove()}
+            },valid:function(){
+                $(this).nextAll(".error").remove();
+                $("#send-61").validation(
+                    $("#tel-61").validate({
+                        test:"blank",
+                        invalid:function(){
+                            $(".error").remove();
+                            if($(this).nextAll(".error").notExists()){
+                                $(this).after('<div class="error">Введите номер телефона</div>');
+                                $(this).nextAll(".error").delay(1500).fadeOut("slow");
+                                setTimeout(function(){
+                                    $("#tel-61").next(".error").remove();
+                                },2100);
+                            }
+                        },valid:function(){$(this).nextAll(".error").remove()}
+                    })
+                )
+            }
         })
     );
 });
+
 
 
 

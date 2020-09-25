@@ -1,42 +1,52 @@
-.features
+//.features
+.features__title
+  width: 100%
+  margin-bottom: 30px
+
+.features__subtitle
+  color: #9a9a9a
+  font-size: 110%
+  text-align: center
+  margin-bottom: 50px
+
+
+.features__group
   display: flex
   flex-wrap: wrap
   justify-content: space-between
 
-.features__title
-  width: 100%
-  margin-bottom: 50px
-
-.features__group
-  width: 28.5%
+.features__item
+  width: 25%
   padding: 30px 20px
   @media (max-width: 1050px)
     padding: 30px 10px
 
   @media (max-width: $media-md)
-    width: 45%
+    width: 95%
     margin-bottom: 20px
+    padding: 30px 25px
     &:last-child
       margin-bottom: 0
 
-  @media (max-width: $media-sm)
-    width: 95%
-    padding-left: 20px
-
 .features__accent
   display: block
+  text-align: center
   font-size: 72px
-  margin-right: 40px
-
-  @media (max-width: 1120px)
-    margin-right: 10px
-
-  @media (max-width: $media-md)
-    font-size: 24px
-
-  @media (max-width: $media-sm)
-    margin-right: 40px
-
+  &:after
+    content: ''
+    display: block
+    width: 60px
+    height: 3px
+    background: $tertiary-content-color
+    margin: 30px auto 50px
 
 .features__accent-word
-  font-size: 0.6em
+  font-size: 14px
+  letter-spacing: 2px
+  text-align: center
+  margin-bottom: 30px
+
+.features__descriptor
+  text-align: center
+  color: #9a9a9a
+  line-height: 1.5

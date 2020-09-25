@@ -58,17 +58,17 @@ $(function () {
 });
 
 $(window).on('load', function (e) {
-    scrollHeader();
+    // scrollHeader();
     paddingHeader();
     scrollUp('.footer__scroll_top', 200);
 });
 $(window).on('resize', function (e) {
-    scrollHeader();
+    // scrollHeader();
     paddingHeader();
 });
 
 $(window).on('scroll', function (e) {
-    scrollHeader();
+    // scrollHeader();
     paddingHeader();
 });
 
